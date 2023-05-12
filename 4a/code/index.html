@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    // The jQuery Mobile CSS theme file (optional, if you are overriding the
+    default theme)
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    // The jQuery core JavaScript file
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    //The jQuery Mobile core JavaScript file
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+    <style>
+      .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20% 0 20%;
+      }
+      .profile_img {
+        width: 200px;
+        height: 200px;
+      }
+      .profile_img img {
+        width: 100%;
+      }
+      .box {
+        margin-top: 100px;
+      }
+    </style>
+    <div data-role="page" id="about" class="page">
+      <div data-role="header">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content center">
+        <div class="profile_img">
+          <img
+            src="https://media.licdn.com/dms/image/D4D03AQGu7OlNz6X2xA/profile-displayphotoshrink_
+800_800/0/1672840827967?
+e=2147483647&v=beta&t=A6WZPXBkLIkMFfdJ77xiOlQ_88O5oBERyJQ4iYc92a4"
+            alt="Shubham Pitale's Image"
+          />
+        </div>
+        <div style="text-align: center; margin-top: 10px">
+          I'm a third year student currently pursuing a Bachelor's Degree in
+          Information Technology at the Pune Institute of Computer Technology
+          with a keen interest in web development and solving DSA problems. I'm
+          an open minded person and love to connect & interact with people. I’m
+          currently exploring backend languages for web development and how to
+          integrate them in projects. Apart from my studies, I love playing
+          cricket.
+        </div>
+      </div>
+      <div data-role="footer" style="text-align: center; margin-top: 10px">
+        <p>&copy; 2023 Copyrights ShubhamPitale</p>
+      </div>
+    </div>
+    <div data-role="page" id="projects">
+      <div data-role="header">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content">
+        <div class="center">
+          <div class="profile_img">
+            <img
+              src="https://github.com/ShubhamPitale/Hostlify_PBL2yr/raw/main/src/images/
+logo_new.png"
+              alt="Project1"
+            />
+            <p>
+              Project Link:
+              <a href="https://github.com/ShubhamPitale/Hostlify_PBL2yr"
+                >Hostlify</a
+              >
+            </p>
+          </div>
+          <div class="profile_img box">
+            <img
+              src="https://github.com/ShubhamPitale/JobTracker/raw/main/images/logo.png"
+              alt="Project2"
+            />
+            <p>
+              Project Link:
+              <a href="https://github.com/ShubhamPitale/JobTracker"
+                >Job Tracker</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div data-role="footer" style="text-align: center; margin-top: 10px">
+        <p>&copy; 2023 Copyrights ShubhamPitale</p>
+      </div>
+    </div>
+    <div data-role="page" id="contact">
+      <div data-role="header">
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div data-role="main" class="ui-content">
+        <div>
+          <h3>Contact Form</h3>
+          <form method="post">
+            <label for="fname">Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="Fullname" />
+            <br />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <br />
+            <label for="msg">Message</label>
+            <textarea name="msg" id="msg" placeholder="Message"></textarea>
+          </form>
+        </div>
+        <div>
+          <h3>Contact Details</h3>
+          <p>Email: shubhampitale45@gmail.com</p>
+          <p>Mobile: 8888888888</p>
+        </div>
+      </div>
+      <div data-role="footer" style="text-align: center; margin-top: 10px">
+        <p>&copy; 2023 Copyrights ShubhamPitale</p>
+      </div>
+    </div>
+  </body>
+</html>

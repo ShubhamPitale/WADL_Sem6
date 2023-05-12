@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>33352_Assign1_a_WADL</title>
+    <!-- Fontawesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- // CSS - CDN link and reference to offline file-->
+    <!-- CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css"
+    />
+    <link
+      rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.1/Chart.min.js"></script>
+    <!-- Offline file -->
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"
+    />
+    <!-- Link to custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- /////////
+Navbar Starts
+/////////// -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button id="cus_toggle_btn" class="cus_toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="img_container">
+          <img src="./logo1.png" />
+        </div>
+        <div class="btn-group ms-auto">
+          <button
+            type="button"
+            class="btn btn-secondary dropdown-toggle"
+            data-bs-toggle="dropdown"
+            data-bs-display="static"
+            aria-expanded="false"
+          >
+            <i class="bi bi-person-fill"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li>
+              <button class="dropdown-item" type="button">Profile</button>
+            </li>
+            <li><button class="dropdown-item" type="button">Logout</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /////////////////
+Navbar ends
+//////////////-->
+    <!-- ////////////////
+Main container starts
+//////////// -->
+    <div class="main_container">
+      <div class="side_bar" id="side_bar">
+        <h3 class="side_bar_heading">Core</h3>
+        <ul class="side_bar_items">
+          <li class="side_bar_item">
+            <i class="fa-solid fa-gauge"></i>
+            <a href="#">DashBoard</a>
+          </li>
+        </ul>
+        <div class="divider"></div>
+        <h3 class="side_bar_heading">Options</h3>
+        <ul class="side_bar_items">
+          <li class="side_bar_item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <a href="#">List of all students</a>
+          </li>
+          <li class="side_bar_item">
+            <i class="fa-solid fa-newspaper"></i>
+            <a href="#">Exam Question Papers</a>
+          </li>
+          <li class="side_bar_item">
+            <i class="fa-solid fa-calendar"></i>
+            <a href="#">TimeTable</a>
+          </li>
+        </ul>
+      </div>
+      <div class="bunch_of_cards">
+        <div class="card_child">
+          <div class="single_card blue">
+            <p class="card_details">Number of students enrolled for exam</p>
+            <p class="card_number">1011</p>
+          </div>
+          <div class="single_card yellow">
+            <p class="card_details">Number of students gave exam</p>
+            <p class="card_number">831</p>
+          </div>
+        </div>
+        <div class="card_child">
+          <div class="single_card green">
+            <div class="card_details">Number of students passed exam</div>
+            <div class="card_number">815</div>
+          </div>
+          <div class="single_card red">
+            <p class="card_details">Number of students failed exam</p>
+            <p class="card_number">16</p>
+          </div>
+        </div>
+        <div class="cus_table">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Roll No.</th>
+                <th scope="col">Student Name</th>
+                <th scope="col">Marks</th>
+                <!-- <th scope="col">Email Id</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">33350</th>
+                <td>Amir Pawar</td>
+                <td>33/50</td>
+                <!-- <td>amir23@gmail.com</td> -->
+              </tr>
+              <tr>
+                <th scope="row">33351</th>
+                <td>Vishvam Pawar</td>
+                <td>46/50</td>
+                <!-- <td>vishvampawar1101@gmail.com</td> -->
+              </tr>
+              <tr>
+                <th scope="row">33352</th>
+                <td>Shubham Pitale</td>
+                <td>49/50</td>
+                <!-- <td>shubhampitale45@gmail.com</td> -->
+              </tr>
+            </tbody>
+          </table>
+          <div class="cus_chart">
+            <div id="donut-chart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ////////////////
+Main container ends
+/////////// -->
+    <script src="script.js"></script>
+    <!-- // Javascript - CDN link and reference to offline file-->
+    <!--CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <!--Offline file -->
+    <script src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
